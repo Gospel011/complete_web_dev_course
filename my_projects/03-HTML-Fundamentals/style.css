@@ -1,5 +1,5 @@
 
-h1, h2, h3, h4, p, li {
+body {
     font-family: sans-serif;
     color: #444;
 }
@@ -66,13 +66,13 @@ aside {
     border-bottom: 5px solid #1098ad;
 }
 
-li:first-child {
+/* li:first-child {
     font-weight: bold;    
-}
+} */
 
-li:last-child {
+/* li:last-child {
     font-style: italic;
-}
+} */
 
 /* Styling links */
 a:link {
