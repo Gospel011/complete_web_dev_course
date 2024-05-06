@@ -18,7 +18,6 @@ body {
     padding: 20px 40px;
     background-color: #f7f7f7;
     margin-bottom: 60px;
-    height: 66px;
 }
 
 .post-header {
@@ -27,6 +26,17 @@ body {
 
 article {
     margin-bottom: 60px;    
+}
+
+nav a:link {
+    margin-right: 30px;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+nav a:link:last-child {
+    margin-right: 0;
 }
 
 aside {
@@ -47,6 +57,10 @@ h1, h2, h3 {
 }
 
 h1 {
+    font-size: 26px;
+}
+
+.brand-name {
   font-size: 26px;
   font-style: italic;
   text-transform: uppercase;
