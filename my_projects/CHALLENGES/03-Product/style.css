@@ -1,12 +1,21 @@
-body {
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+article {
     border: 5px solid black;
     line-height: 1.4;
+    width: 825px;
+    margin: 100px auto;
 }
 
 .product-name {
     text-transform: uppercase;
     text-align: center;
     background-color: #ececec;
+    padding: 20px 40px;
 }
 
 .price {
@@ -16,7 +25,13 @@ body {
 .perk {
     text-transform: uppercase;
     color: #444;
+    margin-bottom: 15px;
 }
+
+p {
+    margin-bottom: 10px;
+}
+
 
 a:link, a:visited {
     color: black;
@@ -30,10 +45,14 @@ a:hover, a:active {
 .list-title {
     text-transform: uppercase;
     font-size: 16px;
+    margin-top: 30px;
 }
 
 ul {
     list-style-type: square;
+    line-height: 2;
+    margin-left: 40px;
+    margin-bottom: 5px;
 }
 
 button {
@@ -43,10 +62,12 @@ button {
     padding: 8px;
     border: none;
     text-transform: uppercase;
+    width: 100%;
 }
 
 button:hover {
     background-color: white;
     color: black;
     cursor: pointer;
+    border-top: 5px solid black;
 }
