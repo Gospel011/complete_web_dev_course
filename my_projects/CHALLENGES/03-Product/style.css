@@ -1,0 +1,40 @@
+body {
+    border: 5px solid black;
+}
+
+.product-name {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ececec;
+}
+
+.price {
+    font-size: 26px;
+}
+
+.perk {
+    text-transform: uppercase;
+    color: #444;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+    /* border-radius: 2px; */
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
