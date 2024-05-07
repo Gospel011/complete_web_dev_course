@@ -111,7 +111,10 @@ button {
     color: white;
     font-size: 20px;
     padding: 8px;
-    border: none;
+    border-top: 5px solid transparent;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
     text-transform: uppercase;
     width: 100%;
 }
