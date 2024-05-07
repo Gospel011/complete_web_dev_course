@@ -9,6 +9,7 @@ article {
     line-height: 1.4;
     width: 825px;
     margin: 100px auto;
+    position: relative;
 }
 
 .product-name {
@@ -17,6 +18,56 @@ article {
     background-color: #ececec;
     padding: 20px 40px;
 }
+
+.sale {
+    background-color: red;
+    display: inline-block;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    color: white;
+
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.square:last-child {
+    margin-right: 0;
+}
+
+.black {
+    background-color: black;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: yellowgreen;
+}
+
+.brown {
+    background-color: brown;
+}
+
 
 .price {
     font-size: 26px;
