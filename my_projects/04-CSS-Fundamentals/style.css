@@ -13,23 +13,27 @@ body {
 .page-container {
     width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    column-gap: 75px;
+    row-gap: 60px;
 }
 
 .main-header {
     padding: 20px 40px;
     background-color: #f7f7f7;
-    margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-column: 1 / -1;
 }
 
 .post-header {
     margin-bottom: 40px;
 }
 
-article {
-    margin-bottom: 60px;    
+article p:last-child {
+    margin-bottom: 0px;    
 }
 
 .row {
@@ -55,6 +59,7 @@ aside {
     padding: 40px 0;
     flex-basis: 300px;
     flex-shrink: 0;
+    align-self: start;
 }
 
 .post-img {
