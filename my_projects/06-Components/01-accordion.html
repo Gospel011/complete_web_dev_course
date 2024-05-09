@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Accordion Component</title>
+
+    <style>
+      /*
+          SPACING SYSTEM (px)
+          2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+          FONT SIZE SYSTEM (px)
+          10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+          */
+
+      /*
+        COLOR SYSTEM:
+        MAIN COLOR: #087f5b  #099268 #e6fcf5 #c3fae8
+        GREY COLOR: #343a40
+       */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+      }
+
+      /* Design starts */
+
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+        /* background-color: red; */
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+        color: #087f5b;
+      }
+
+      .item {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        row-gap: 32px;
+        column-gap: 26px;
+        align-items: center;
+        border-top: 4px solid #087f5b;        
+      }
+
+      .number {
+        color: #087f5b;
+        font-size: 26px;
+        font-weight: 500;
+      }
+
+      .title-text {
+        color: #087f5b;
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .hidden-text {
+        grid-column: 2;
+      }
+
+      .hidden-text p {
+        margin-bottom: 16px;
+        line-height: 1.6;
+      }
+
+      .hidden-text ul {
+        color: #868e96;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="item open">
+        <!-- number -->
+        <p class="number">02</p>
+
+        <!-- title -->
+        <p class="title-text">How long do I have to return my chair</p>
+
+        <!-- icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <div class="hidden-text ">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+            voluptatum eligendi, praesentium ad, quidem reprehenderit eaque
+            voluptatem quia aperiam ab nisi! Laborum adipisci explicabo dolorum
+            ipsum, delectus tenetur. Dolorem, nesciunt.
+          </p>
+
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Lure adipisci, tempora, perferendis nisi quos corporis blanditiis
+              at saepe.
+            </li>
+            <li>
+              hic voluptatem voluptas? Accusantium sequi magnam quae earum
+              consequatur quod.
+            </li>
+            <li>Numquam natus dolorem neque similique repellendus aperiam.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
