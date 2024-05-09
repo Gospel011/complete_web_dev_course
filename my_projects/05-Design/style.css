@@ -8,7 +8,7 @@ FONT SIZE SYSTEM (px)
 
 /* 
 COLOR SYSTEM:
-  MAIN COLOR: #087f5b  #099268
+  MAIN COLOR: #087f5b  #099268 #e6fcf5 #c3fae8
   GREY COLOR: #343a40
  */
 
@@ -33,7 +33,7 @@ body {
 
 header,
 section {
-  margin-bottom: 48px;
+  margin-bottom: 96px;
 }
 
 h2 {
@@ -45,6 +45,10 @@ h2 {
 
 .testimonial-box h2 {
   font-size: 24px;
+}
+
+.testimonial-author {
+  color: #c3fae8;
 }
 
 p {
@@ -122,7 +126,7 @@ img {
 }
 
 .features-title {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .features-text {
@@ -149,17 +153,18 @@ img {
   stroke: #087f5b;
   width: 32px;
   height: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
+  color: #e6fcf5;
 }
 
 /* CHAIRS */
 .chair-box {
-  padding: 24px;
+  padding: 32px;
 }
 
 .chair {
@@ -182,14 +187,17 @@ h3 {
 
 .chair-details {
   list-style: none;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
+
+
 
 .chair-details li {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+
 }
 
 .chair-details li:last-child {
