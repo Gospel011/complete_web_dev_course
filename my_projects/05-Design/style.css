@@ -99,6 +99,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
+  border-radius: 1000px;
 }
 
 .btn:hover,
@@ -132,6 +133,7 @@ img {
   background-color: #087f5b;
   color: white;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -162,6 +164,16 @@ img {
 
 .chair {
   box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+img {
+  border-radius: 12px;
 }
 
 h3 {
