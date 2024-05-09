@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Accordion Component</title>
+
+    <style>
+      /*
+          SPACING SYSTEM (px)
+          2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+          FONT SIZE SYSTEM (px)
+          10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+          */
+
+      /*
+        COLOR SYSTEM:
+        MAIN COLOR: #087f5b  #099268 #e6fcf5 #c3fae8
+        GREY COLOR: #343a40
+       */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+      }
+
+      .carousel {
+        background-color: #087f5b;
+        width: 800px;
+        margin: 100px auto;
+        padding: 32px 40px 32px 88px;
+        border-radius: 8px;
+        color: white;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 84px;
+      }
+
+      /* Design starts */
+      img {
+        width: 200px;
+        transform: scale(1.5);
+        border-radius: 8px;
+      }
+      .btn {
+        width: 24px;
+        height: 24px;
+        stroke: #087f5b;
+        border-radius: 50%;
+      }
+
+      
+      .btn-container {
+          width: 40px;
+          height: 40px;
+          background-color: white;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          position: absolute;
+          cursor: pointer;
+        }
+
+        .btn--right {
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+        .btn--left {
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .testimonial {
+            font-weight: 500;
+        }
+
+        .testimonial-text {
+            margin-bottom: 30px;
+            color: #e6fcf5;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .testimonial-author {
+            color: #c3fae8;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.4;
+        }
+
+        .testimonial-author p:last-child {
+            font-size: 12px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid #087f5b;
+            cursor: pointer;
+        }
+
+        .dot--filled {
+            background-color: #087f5b;
+        }
+
+        .dots {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 30px);
+            display: flex;
+            gap: 10px;
+        }
+
+        
+        
+        
+        
+  
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <!-- image -->
+      <img src="maria.jpg" alt="Image of Maria de Almeida" />
+
+      <!-- testimonial section -->
+      <div class="testimonial">
+        <div class="testimonial-text">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, culpa
+          veritatis corporis eos ducimus impedit dolore atque labore dolores."
+        </div>
+
+        <div class="testimonial-author">
+          <p>Maria de Almeida</p>
+          <p>Senior Product Manager at EDP Comercial</p>
+        </div>
+      </div>
+
+      <!-- back button -->
+      <div class="btn-container btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </div>
+
+      <!-- forward button -->
+      <div class="btn-container btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </div>
+
+      <!-- dots -->
+      <div class="dots">
+        <div class="dot dot--filled">&nbsp;</div>
+        <div class="dot">&nbsp;</div>
+        <div class="dot">&nbsp;</div>
+        <div class="dot">&nbsp;</div>
+      </div>
+    </div>
+  </body>
+</html>
