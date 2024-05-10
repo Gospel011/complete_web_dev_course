@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Accordion Component</title>
+
+    <style>
+      /*
+          SPACING SYSTEM (px)
+          2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+          FONT SIZE SYSTEM (px)
+          10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+          */
+
+      /*
+        COLOR SYSTEM:
+        MAIN COLOR: #087f5b  #099268 #e6fcf5 #c3fae8
+        GREY COLOR: #343a40
+       */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+      }
+
+      .icon {
+        height: 24px;
+      }
+
+      .pagination {
+        width: 500px;
+        margin: 30% auto;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: space-between;
+      }
+
+      .btn {
+        border: 1px solid #087f5b;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .icon {
+        box-sizing: content-box;
+      }
+
+      .number-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+      }
+
+      .number-btn:hover,
+      .selected {
+        background-color: #087f5b;
+        color: white;
+      }
+      button {
+        background-color: white;
+      }
+
+      button:hover {
+        background-color: #087f5b;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <!-- left button -->
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+
+      <div class="number-btn selected"><span>1</span></div>
+      <div class="number-btn"><span>2</span></div>
+      <div class="number-btn"><span>3</span></div>
+      <div class="number-btn"><span>4</span></div>
+      <div class="number-btn"><span>5</span></div>
+      <div class="number-btn"><span>6</span></div>
+      <span>...</span>
+      <div class="number-btn"><span>100</span></div>
+
+      <!-- right button -->
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
