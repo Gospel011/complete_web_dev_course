@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -35,9 +31,16 @@
       /* GENERAL STYLES */
       /* ------------------------ */
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: sans-serif;
         color: #343a40;
         height: 100vh;
+
+        text-align: center;
+        font-weight: bold;
+
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 200px;
+        grid-template-rows: 80px 1fr;
       }
 
       /* colors */
@@ -45,12 +48,36 @@
       /* menu: bg-color: #7048e8, color: #fff */
       /* section, aside: #e9ecef */
 
+      nav {
+        background-color: #343a40;
+        color: white;
+        grid-row: 1 / -1
+      }
+
+      menu {
+        background-color: #7048e8;
+        color: #fff;
+        grid-column: 2 / -1
+      }
+
+      section, aside {
+        background-color: #e9ecef;
+      }
+
+      nav, main, menu, section, aside {
+        padding-top: 24px;
+      }
+
   
     </style>
   </head>
   <body>
 
-    
+    <nav>Nav</nav>
+    <menu>menu</menu>
+    <section>Inbox</section>
+    <main>Email View</main>
+    <aside>Additional Info</aside>
     
   </body>
 </html>
