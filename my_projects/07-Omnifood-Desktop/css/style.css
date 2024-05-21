@@ -41,7 +41,7 @@ D E S I G N   G U I D E L I N E S
 
 4. BORDER RADIUS
     - 9px
-    
+     
 5. WHITESPACE
     2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
@@ -64,6 +64,27 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+
+/* REUSEABLE COMPONENTS */
+
+.centered-container {
+    width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 9.6rem;
+}
+
+.grid--2--cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* ____________________________ */
 
 .section-hero {
   background-color: #fdf2e9;
@@ -219,3 +240,5 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+
+
