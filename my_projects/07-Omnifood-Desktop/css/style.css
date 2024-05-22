@@ -84,6 +84,10 @@ strong {
   margin: 0 auto;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
@@ -175,8 +179,6 @@ strong {
   color: #888;
 }
 
-
-
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -216,6 +218,10 @@ strong {
 
 .margin-right-sm {
   margin-right: 1.6rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
 }
 
 .delivered-meals {
@@ -332,7 +338,6 @@ strong {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
 .step-img-box::before {
@@ -369,7 +374,6 @@ strong {
   filter: brightness(0);
   opacity: 50%;
 }
-
 
 /* ***************** */
 /* MEALS SECTION */
@@ -438,7 +442,7 @@ strong {
 }
 
 .tag--vegetarian {
-  background-color: #51cf66;  
+  background-color: #51cf66;
 }
 
 .tag--vegan {
@@ -453,7 +457,6 @@ strong {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-
 }
 
 .list-item {
@@ -461,11 +464,32 @@ strong {
   align-items: center;
   font-size: 1.8rem;
   gap: 1.6rem;
-
 }
 
 .list-icon {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+.all-recipes {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid currentColor;
+
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
