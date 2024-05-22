@@ -93,6 +93,10 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* ____________________________ */
 
 .section-hero {
@@ -359,4 +363,31 @@ body {
   height: 3.2rem;
   filter: brightness(0);
   opacity: 50%;
+}
+
+
+/* ***************** */
+/* MEALS SECTION */
+/* ***************** */
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-img {
+  width: 100%;
 }
