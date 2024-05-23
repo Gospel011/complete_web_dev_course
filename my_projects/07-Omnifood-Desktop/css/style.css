@@ -94,6 +94,10 @@ strong {
   row-gap: 9.6rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -104,6 +108,10 @@ strong {
 
 .grid--3--cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* ____________________________ */
@@ -556,6 +564,43 @@ strong {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 0 1.6rem;
+}
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "Best value";
+  background-color: #ffd43b;
+  padding: .8rem 8rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 6.9%;
+  right: -20.6%;
+  transform: rotate(45deg);
 }
 
 .plan-header {
