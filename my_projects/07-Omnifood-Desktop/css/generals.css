@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
+  }
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+    color: #555;
+    background-color: #fff;
+}
+
+/* REUSEABLE COMPONENTS */
+
+.centered-container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+  }
+  
+  .grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+  }
+  
+  .grid--center-v {
+    align-items: center;
+  }
+  
+  .grid--2--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid--3--cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid--4--cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .grid--5--cols {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  

@@ -58,14 +58,10 @@ html {
   font-size: 62.5%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   /* font-family: sans-serif; */
   line-height: 1;
   font-weight: 400;
@@ -74,44 +70,6 @@ body {
 
 strong {
   font-weight: 500;
-}
-
-/* REUSEABLE COMPONENTS */
-
-.centered-container {
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-.center-text {
-  text-align: center;
-}
-
-.grid {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-}
-
-.grid:not(:last-child) {
-  margin-bottom: 9.6rem;
-}
-
-.grid--center-v {
-  align-items: center;
-}
-
-.grid--2--cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3--cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4--cols {
-  grid-template-columns: repeat(4, 1fr);
 }
 
 /* ____________________________ */
@@ -187,6 +145,7 @@ strong {
   color: #888;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -195,6 +154,10 @@ strong {
   border-radius: 9px;
   text-decoration: none;
   font-weight: bold;
+
+  /* For .btn */
+  border: none;
+  cursor: pointer;
 
   transition: all 0.3s;
 }
@@ -207,8 +170,12 @@ strong {
 
 .btn-primary:hover,
 .btn-primary:active {
-  background-color: #cf711f;
-  color: #fff;
+  /* background-color: #cf711f; */
+  color: #cf711f;
+  background-color: transparent;
+  /* border: 5px solid #cf711f; */
+  /* display: inline-block; */
+  box-shadow: inset 0 0 0 2px  #e67e22;
 }
 
 .btn-secondary:link,
@@ -270,7 +237,7 @@ strong {
   padding: 0 4.8rem;
 }
 
-.header img {
+.logo {
   height: 2.2rem;
 }
 
@@ -337,7 +304,7 @@ strong {
 
 .step-img-box::before,
 .step-img-box::after {
-  content: '';
+  content: "";
   display: block;
 
   border-radius: 50%;
@@ -589,7 +556,7 @@ strong {
 }
 
 .pricing-plan--complete::after {
-  content: 'Best value';
+  content: "Best value";
   background-color: #ffd43b;
   padding: 0.8rem 8rem;
   font-weight: 600;
@@ -685,8 +652,8 @@ strong {
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
 
   /*  */
-  height: 50rem;
-  overflow: hidden;
+  /* height: 50rem; */
+  /* overflow: hidden; */
 }
 
 .cta-text-box {
@@ -702,6 +669,7 @@ strong {
 .cta-text {
   font-size: 1.8rem;
   line-height: 1.8;
+  margin-bottom: 4.8rem;
 }
 
 .cta-img-box {
@@ -710,7 +678,47 @@ strong {
       rgb(235, 151, 78, 0.25),
       rgb(230, 126, 34, 0.25)
     ),
-    url('../content/img/eating.jpg');
+    url("../content/img/eating.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  border-radius: 1.2rem;
+  font-family: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+
+/* FOOTER SECTION */
+.footer {
+  padding: 9.6rem 0;
 }
